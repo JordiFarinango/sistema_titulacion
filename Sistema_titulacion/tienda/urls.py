@@ -1,7 +1,7 @@
 from django.urls import path
 
 from .views import crear_empresa, nuevo_cliente, nueva_factura, nueva_linea_factura, nuevo_producto, nueva_categoria, nueva_marca, nueva_empresa, nuevo_proveedor
-
+#
 urlpatterns = [
     path('dashboard/crear/', crear_empresa, name="crear_empresa"),
 
