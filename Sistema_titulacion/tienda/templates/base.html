@@ -38,16 +38,55 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title">Menu</li>
-
-                        <li class="sidebar-item active ">
-                            <a href="base.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Seguimiento</span>
+                        <li class="sidebar-title">Menú</li>
+                
+                        <!-- submenú Transacciones -->
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-people-fill"></i>
+                                <span>Transacciones</span>
                             </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="{% url 'nuevo_cliente' %}">Nuevo Cliente</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="{% url 'nueva_factura' %}">Nueva Factura</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="{% url 'linea_factura' %}">Nueva Línea de Factura</a>
+                                </li>
+                            </ul>
                         </li>
-     
+                
+                        <!-- submenú inventario -->
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-box-seam"></i>
+                                <span>Inventario</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="{% url 'nuevo_producto' %}">Nuevo Producto</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="{% url 'nueva_categoria' %}">Nueva Categoría</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="{% url 'nueva_empresa' %}">Nueva Empresa</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="{% url 'nueva_marca' %}">Nueva Marca</a>
+                                </li>
+
+                                <li class="submenu-item">
+                                    <a href="{% url 'nuevo_proveedor' %}">Nuevo Proveedor</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+                
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
@@ -152,7 +191,7 @@
                                     <div class="card-header">
                                         <h4>Profile Visit</h4>
                                     </div>
-                                    < class="card-body">
+                                    <class="card-body">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex align-items-center">
